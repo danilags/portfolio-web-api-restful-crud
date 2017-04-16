@@ -1,0 +1,28 @@
+{
+  "name": "portfolio-web-api-restful-crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danilags/portfolio-web-api-restful-crud.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danilags/portfolio-web-api-restful-crud/issues"
+  },
+  "homepage": "https://github.com/danilags/portfolio-web-api-restful-crud#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0",
+    "pg": "^6.1.5",
+    "sequelize": "^3.30.4"
+  }
+}

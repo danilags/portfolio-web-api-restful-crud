@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css">
+  </head>
+  <body>
+
+    <div class="container">
+    <h1>Web API RESTFUL MEMO:</h1>
+      <div class="row">
+        <div class="col s12 field is-grouped">
+          <p class="control is-expanded">
+            <input id="title" class="input" type="text" placeholder="Add Title Memo..">
+          </p>
+          <p class="control is-expanded">
+            <input id="content" class="input" type="text" placeholder="Add Content Memo..">
+          </p>
+          <p class="control">
+            <a class="button is-info" onclick="addMemo()" id="submit">
+              Add Todo
+            </a>
+          </p>
+        </div>
+      </button>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="list-memo">
+
+        </tbody>
+      </table>
+      <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#testModal">Edit Modal Test</button>
+
+    <!-- Modal -->
+    <div id="testModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Edit Memo</h4>
+          </div>
+          <div class="modal-body">
+            <p>Some text in the modal.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+
+    </div>
+  </div>
+  </body>
+</html>
